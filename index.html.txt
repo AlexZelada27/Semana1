@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Mar 30 16:36:28 2025
-
-@author: ALEX
-"""
-
 # funciones.py
 
 # 1. Función para convertir metros a centímetros
@@ -53,44 +46,3 @@ def celsius_a_fahrenheit(celsius):
 def soles_a_dolares(soles, tasa_de_cambio):
     return soles / tasa_de_cambio 
 
-
-
-
-
-
-
-
-
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Mar 30 17:44:24 2025
-
-@author: ALEX
-"""
-
-from operaciones import funciones
-
-# Pruebas de las funciones
-print("10 metros en centímetros:", funciones.metros_a_centimetros(10))
-print("Suma de 5, 8 y 12:", funciones.suma_tres_numeros(5, 8, 12))
-print("Promedio de 5 notas (14, 18, 20, 17, 15):", funciones.promedio_cinco_notas(14, 18, 20, 17, 15))
-print("Quinta parte de la suma de 3, 6, 9:", funciones.quinta_parte_suma(3, 6, 9))
-print("Edad de una persona nacida en 2000:", funciones.calcular_edad(2000, 2025))
-print("Salario por 40 horas a $15/hora:", funciones.calcular_salario(40, 15))
-
-# Aumento de sueldos
-sueldo1, sueldo2, sueldo3 = funciones.aumento_sueldo(1000, 1200, 1500)
-print(f"Sueldos con aumento: {sueldo1}, {sueldo2}, {sueldo3}")
-
-# Cálculo del IGV
-print("Precio con IGV de un artículo de 150:", funciones.calcular_igv(150))
-
-# Total y media de artículos
-total, media = funciones.total_y_media(20, 50, 30)
-print(f"Total: {total}, Media: {media}")
-
-# Conversión de temperatura
-print("30 grados Celsius en Fahrenheit:", funciones.celsius_a_fahrenheit(30))
-
-# Conversión de soles a dólares (suponiendo un tipo de cambio de 3.8)
-print("100 soles en dólares:", funciones.soles_a_dolares(100, 3.8))
